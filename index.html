@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container p-5">
+        <div class=" row loginPage ">
+            <form class="logInForm">
+                <div class="form-group">
+                    <label>Email address</label>
+                    <input type="text" class="form-control emailInput">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control passwordInput">
+                </div>
+                <button class="btn btn-primary logInBtn">Login</button>
+            </form>
+        </div>
+
+        <div class="row userPage ">
+            <div class="nav">
+                <h2 class="userName">Farid</h2>
+                <div class="btn-group mx-3">
+                    <button class="btn btn-primary users_Btn">Users</button>
+                    <button class="btn btn-primary following_Btn">Following</button>
+                    <button class="btn btn-primary followers_Btn">Followers</button>
+                    <button class="btn btn-primary notifications_Btn">Notifications</button>
+                    <button class="btn btn-primary logOut">LogOut</button>
+                </div>
+            </div>
+            <div class="col-12 usersRow">
+                <h3>Users</h3>
+                <div class="row users"></div>
+            </div>
+            <div class="col-12 notificationsRow">
+                <h3>Notifications</h3>
+                <div class="row notificationListHtml"></div>
+            </div>
+            <div class="col-12 followersRow">
+                <h3>Followers</h3>
+                <div class="row followersHtml"></div>
+            </div>
+            <div class="col-12 followingRow">
+                <h3>Following</h3>
+                <div class="row followingHtml"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="script.js"></script>
+
+</html>
